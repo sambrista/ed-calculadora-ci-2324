@@ -30,12 +30,7 @@ jobs:
           java-version: '19'
           distribution: 'temurin'
           cache: maven
-  test:
-    permissions: write-all
-    runs-on: ubuntu-latest # Sistema operativo en el que se ejecuta el action
-    needs: build
 
-    steps:
       # Ejecuta los tests
       - name: Test
         run: mvn --batch-mode -D test
