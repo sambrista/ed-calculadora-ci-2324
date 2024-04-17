@@ -33,6 +33,7 @@ jobs:
   test:
     permissions: write-all
     runs-on: ubuntu-latest # Sistema operativo en el que se ejecuta el action
+    needs: build
 
     steps:
       # Ejecuta los tests
