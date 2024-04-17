@@ -35,3 +35,19 @@ jobs:
           path: target/surefire-reports/*.xml # Ruta para guardar los informes
           reporter: java-junit
           fail-on-error: true # Si hay error marcar como tarea fallida.
+  publish:
+    needs: test # Indica que necesita que la tarea test se ejecute con éxito
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      - name: Publicar paquete
+        run: mvn --batch-mode deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
