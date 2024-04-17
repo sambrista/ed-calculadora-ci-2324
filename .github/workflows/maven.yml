@@ -10,7 +10,7 @@ on:
 
 # Tareas
 jobs:
-  build: # Tarea "build"
+  test: # Tarea "test"
     permissions: write-all # Tiene permiso para escribir
     runs-on: ubuntu-latest # Sistema operativo en el que se ejecuta el action
 
