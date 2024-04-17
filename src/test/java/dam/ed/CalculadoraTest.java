@@ -27,7 +27,7 @@ class CalculadoraTest {
 
     @Test
     @DisplayName("Divisiones enteras y reales")
-    void testDivisionesEnterasYReales() {    }
+    void testDivisionesEnterasYReales() {
         assertEquals(2, miCalculadora.divide(4,2));
         assertEquals(2.5, miCalculadora.divide(10,4));
         assertEquals(4, miCalculadora.divide(10,2.5));
