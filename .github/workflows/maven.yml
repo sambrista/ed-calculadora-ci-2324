@@ -33,17 +33,6 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
 
-  test:
-    permissions: write-all
-    runs-on: ubuntu-latest # Sistema operativo en el que se ejecuta el action
-    needs: build
-
-    steps:
-      - uses: actions/checkout@v3
-      # Ejecuta los tests
-      - name: Test
-        run: mvn --batch-mode test
-
       # Genera un informe
       - name: Report
         uses: dorny/test-reporter@v1
