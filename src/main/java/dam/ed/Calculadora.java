@@ -8,7 +8,12 @@ public class Calculadora {
     double resta(double minuendo, double sustraendo) {
         return minuendo - sustraendo;
     }
-
+    /**
+      * Multiplica dos números y devuelve el resultado
+      * @param a multiplicando 1
+      * @param b multiplicando 2
+      * @return resultado de la multiplicación
+      */
     double multiplica(double a, double b) {
         return a * b;
     }
