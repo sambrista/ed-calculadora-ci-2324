@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"dam.ed","c":"Calculadora","l":"Calculadora()","u":"%3Cinit%3E()"},{"p":"dam.ed","c":"Calculadora.OperacionInvalidaException","l":"OperacionInvalidaException(String)","u":"%3Cinit%3E(java.lang.String)"}];updateSearchResults();
